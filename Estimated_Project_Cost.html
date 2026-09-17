@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 2 Infrastructure Scaling Cost - Exam Bank</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 40px;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #111872;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #0038FF;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .invoice-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #D6E3FF;
+            color: #111872;
+        }
+        .total-row {
+            font-weight: bold;
+            background-color: #f9f9f9;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #555;
+            text-align: center;
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="no-print" style="text-align: right; margin-bottom: 20px;">
+        <button onclick="window.print()" style="background-color: #0038FF; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            🖨️ Download / Print as PDF
+        </button>
+    </div>
+
+    <div class="header">
+        <h1>Estimated Infrastructure Scaling Cost</h1>
+        <h2>Project: Exam Bank (Phase 2 Commercial Scale-Up)</h2>
+    </div>
+
+    <div class="invoice-details">
+        <div>
+            <strong>Prepared By:</strong> Engineering Team<br>
+            <strong>Date:</strong> September 17, 2026
+        </div>
+        <div>
+            <strong>Client:</strong> Mr. Voice<br>
+            <strong>Target Capacity:</strong> 500+ Concurrent Students
+        </div>
+    </div>
+
+    <p>Phase 1 (Prototyping) of the Exam Bank system is built using free developer tools at zero infrastructure cost. This document outlines the estimated budget required to upgrade the system to <strong>Phase 2</strong>: a commercial-grade environment capable of handling 500 students taking exams simultaneously without performance issues.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Infrastructure Item</th>
+                <th>Description</th>
+                <th>Estimated Cost (₦)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1. Dedicated PostgreSQL Database</td>
+                <td>Migration from local SQLite to a persistent, managed PostgreSQL instance for long-term data storage.</td>
+                <td>₦50,000</td>
+            </tr>
+            <tr>
+                <td>2. In-Memory Redis Caching</td>
+                <td>High-speed Redis cluster to store active exam sessions, randomized questions, and answers in memory, ensuring zero lag for students.</td>
+                <td>₦15,000</td>
+            </tr>
+            <tr>
+                <td>3. Backend Server Upgrade</td>
+                <td>"Always-on" serverless infrastructure with increased RAM and CPU to process simultaneous exam submissions instantly.</td>
+                <td>₦45,000</td>
+            </tr>
+            <tr>
+                <td>4. Frontend Pro Hosting & CDN</td>
+                <td>Premium global hosting (e.g., Vercel Pro) to ensure the UI loads quickly for hundreds of students at the same time.</td>
+                <td>₦45,000</td>
+            </tr>
+            <tr>
+                <td>5. Cloud Image & Asset Storage</td>
+                <td>Premium cloud storage (AWS S3 / Cloudinary) and bandwidth for hosting imported question images reliably.</td>
+                <td>₦20,000</td>
+            </tr>
+            <tr>
+                <td>6. Domain Name & SSL Security</td>
+                <td>Registration of a custom premium domain name (e.g., .com or .edu.ng) and advanced SSL security certificates.</td>
+                <td>₦15,000</td>
+            </tr>
+            <tr>
+                <td>7. Load Testing & Performance Tuning</td>
+                <td>Simulated load testing of 500 concurrent users to identify and fix bottlenecks before commercial launch.</td>
+                <td>₦30,000</td>
+            </tr>
+            <tr>
+                <td>8. Miscellaneous / Contingency</td>
+                <td>Buffer for unexpected bandwidth spikes or minor infrastructure adjustments during the scaling phase.</td>
+                <td>₦20,000</td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="2" style="text-align: right;">Total Phase 2 Scaling Budget (1 Year Est.):</td>
+                <td>₦240,000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        <p><em>*Note: This budget is designed specifically for the Phase 2 upgrade to support 500 simultaneous users. The Phase 1 prototype build remains at ₦0 infrastructure cost.</em></p>
+    </div>
+
+</body>
+</html>
